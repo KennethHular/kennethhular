@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenneth</title>
+
+    <script src="https://kit.fontawesome.com/9680585ad1.js" crossorigin="anonymous"></script>
+    <script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js”></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Jura:wght@400;600&family=Lexend+Deca:wght@704&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+</head>
+<!--STYLESHEET-->
+<style>
+
+    html{
+        scroll-behavior: smooth;
+        overflow: hidden;
+    }
+    body{
+       margin: 0;
+       padding: 0   ; 
+       box-sizing: border-box;
+       font-family: 'Roboto', sans-serif;
+
+
+
+
+    }
+
+    .container{
+        width:100%;
+      
+
+    }
+
+    nav{
+        margin: 0 auto;
+        top: 0;
+        display: flex;
+        justify-content: space-around;
+      
+        position: fixed;
+        width: 100%;
+        background-color: #EDE9E8;
+        z-index: 1;
+
+        
+    }
+
+    li{
+        display: inline-block;
+        padding: 40px;
+        list-style-type: none;
+        font-size: 20px;
+        font-weight:500;
+        font-family: 'Lexend Deca', sans-serif;
+       
+    }
+
+ a{
+        text-decoration: none;
+        color: #313131;
+        
+    }
+
+    li:hover{
+        background-color: #dfdbda53;
+        box-sizing: border-box;
+        width: auto;
+        height:auto;
+    }
+    .logo{
+        align-self: center;
+
+    }
+
+    h3, p{
+        margin: 0;
+        text-transform: uppercase;
+
+    }
+
+    h3{
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 800;
+        color: #313131;
+        
+    }
+    p{
+        font-family: 'Jura', sans-serif;
+        font-weight: 700;
+        
+    }   
+
+    #home{
+        display: block;
+        width:100%;
+        height:100vh;
+
+
+
+    }
+      
+      h1 {
+        margin: auto;
+      }
+      
+
+    .wrapper{
+      
+        margin: 0 auto;
+        display:grid;
+        grid-template-columns: 550px 500px;
+        justify-content: center;
+        column-gap: 10px;
+
+    }
+
+    .type, .imgbox{
+        margin-top: 200px;
+        
+    }
+
+    .type{
+        padding-top: 50px;
+    }
+
+    .hello{
+        font-size: 30px;
+    }
+
+    .sentence{
+
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 12px;
+    }
+
+    .quote{
+        font-family: 'Jura', sans-serif;
+        margin-bottom: 5px;
+    }
+    .fronttext{
+        font-family: 'Anton', sans-serif;
+        font-weight: 800;
+        padding-top: 20px;
+        font-size: 80px;
+        margin:0;
+        line-height: 80px;
+        
+    }
+    .typing{
+        color:#313131;
+    }
+    .me{
+        height: 700px;
+
+    }
+    .imgbox{
+        position: relative;
+        height: 100%;
+        width: calc(130% - 80%);
+        top: -115px;
+        right: 50px;
+        padding-left: 50px;
+        margin-left: 100px;
+    }
+
+    
+    #about{
+        display: block;
+        width:100%;
+        height:100vh;
+
+        background-color: rgb(236, 236, 236);
+    }
+
+
+    .about-title{
+        text-align: center;
+        padding-top: 200px;
+        font-family: 'Anton', sans-serif;
+        font-weight: 800;
+        font-size: 80px;
+        margin-right: 100px;
+        color:#313131;
+    }
+    
+    .aboutbox{
+        display: flex;
+        height: 100%;
+ 
+    }
+
+    .aboutme{
+       
+    }
+
+    .introduction, .aboutme{
+        flex: 50%;
+        height:auto;
+    }
+
+
+    .introduction{
+
+        align-self: center;
+      
+    }
+    h4{
+        padding-top: 50px;
+        margin-bottom: 0;
+    }
+    
+    i{
+        padding-top: 15px;
+        padding-right: 10px;
+    }
+
+
+    #skills{
+        display: block;
+        width:100%;
+        height:100vh;
+        background-color: rgb(228, 225, 225);       
+    }
+
+    .skillbox{
+        
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 5px;
+
+    
+    }
+
+    .item1{
+        margin-top: 150px;
+        grid-column: 1 / span 2;
+     
+        height: 150px;
+    }
+
+    .skill-title{
+        text-align: center;
+        font-family: 'Anton', sans-serif;
+        font-weight: 800;
+        font-size: 80px;
+        margin-right: 100px;
+        color:#313131;
+    }
+
+
+</style>
+<!--STYLESHEET-->
+<body>
+    <div class="container">
+        <nav class="navbar fixed-top">
+            <div class="logo">
+                <h3>Kenneth Hular</h3>
+                <p>BSCS1-2</p>
+            </div>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+                
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+
+        <section id="home">
+            <div class="wrapper">
+
+                <div class="type">
+                    <p class="hello">Hello,</p>
+                    <h1 class="fronttext">
+        
+                        I am <span class="typing"></span>
+                        <h2 class="quote"> Talk is cheap. Show me the code.</h2>
+                    <p class="sentence">
+                       I like to program Artificial Intelligence and software rather than building<br>
+                       websites.
+                    </p>
+                    </h1>
+                </div>
+        
+                    
+                <div class="imgbox">    
+                    <img src="https://bit.ly/3gE7CcT" alt="me" class="me">
+                </div>
+        
+            </div>
+        </section>
+
+
+
+        
+        <section id="about">
+
+            <div class="aboutbox">
+                <div class="aboutme">
+                
+                <h1 class="about-title">ABOUT.</h1>
+                </div>
+
+
+                <div class="introduction">
+                    <p class="introp">
+                        Hi I am Kenneth Hular, 19 years old. Currently I am studying at<br>
+                        CVSU-Main Campus and taking Bachelors Degree at Computer Science.
+                        <br><br>
+
+                        I like doing programs related to Aritfial Intelligence or Software.<br>
+                        In web development, I would like to work on back-end part rather than<br>
+                        front-end.
+                        <br><br>
+                        In the future, I am more likely to take path in Software Engineering or <br>
+                        works as Data Scientist.
+                    
+                    </p>
+                    <h4>Contact</h4>
+                    <a href="https://www.facebook.com/hularkenneth" target="_blank">
+                        <i class="fa-brands fa-square-facebook fa-xl"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/chopsueyyy/" target="_blank">
+                        <i class="fa-brands fa-square-instagram fa-xl"></i>
+                    </a>
+
+                    <a href="https://ph.linkedin.com/in/kenneth-hular-6a7148244" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-xl"></i>
+                    </a>
+                    
+                </div>
+
+            </div>
+    
+
+        </section>
+        
+
+        <section id="skills">
+            <div class="skillbox">
+
+
+                <div class="item1">
+                    <marquee behavior="alternate"  class="marquee">
+                        <img src="https://bit.ly/3OEdGP1" alt="">
+                    </marquee>
+                  
+                </div>
+
+                <div class="item2"><h1 class="skill-title">SKILLS.</h1></div>
+
+                <div class="item3">test</div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script type='text/javascript' src='//cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js'></script>
+    <script>
+        var typingEffect = new Typed(".typing",{
+            strings: ["EDITOR","COLLEGE","DESIGNER","PROGRAMMER"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500,
+        })
+
+
+        $('.marquee').marquee({
+            direction: 'left'
+          });
+    </script>
+</body>
+</html>
